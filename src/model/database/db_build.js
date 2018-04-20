@@ -11,7 +11,7 @@ const runDbBuild = cb => {
         console.log('res: ', res);
         cb();
     })
-    .catch(e => console.error('error: ', e));
+    .catch(e => next(e));
 };
 
 module.exports = runDbBuild;

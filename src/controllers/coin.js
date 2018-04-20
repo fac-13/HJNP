@@ -36,5 +36,5 @@ exports.get = (req, res, next) => {
         next();
       }
     })
-    .catch(console.log);
+    .catch(e => next(e));
 };
